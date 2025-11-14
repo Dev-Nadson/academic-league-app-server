@@ -1,0 +1,13 @@
+{
+  "name": "academic-league-app-server",
+  "version": "1.0.0",
+  "description": "A api do sistema de Gerenciamento de Ligas Acadêmicas",
+  "main": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/server.ts --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
