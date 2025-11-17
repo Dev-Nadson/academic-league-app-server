@@ -1,0 +1,16 @@
+services:
+  postgres:
+    container_name: "academic_league_postgres"
+    image: "bitnami/postgresql:latest"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: academic_db
+
+    volumes:
+      - "academic_league_database_data:/bitnami/postgresql"
+
+volumes:
+  academic_league_database_data:

@@ -11,8 +11,6 @@
 - [ ] Endpoint POST `/auth/forgot-password`
 - [ ] Endpoint POST `/auth/reset-password`
 - [ ] Hash de senhas com bcrypt/argon2
-- [ ] Validação de força de senha
-- [ ] Rate limiting em endpoints de autenticação
 
 ### 1.2 Autorização e Permissões
 - [ ] Middleware de autenticação (verificar JWT)
@@ -51,8 +49,7 @@
 - password (string, hashed, required)
 - phone (string)
 - birthdate (date)
-- enrollment (string)
-- cpf (string, unique)
+- enrollment_number (string)
 - institution (string)
 - period (string)
 - role (enum: superadmin, president, vice-president, member)
@@ -74,7 +71,6 @@
 
 ### 2.4 Validações
 - [ ] Email válido e único
-- [ ] CPF válido e único
 - [ ] Telefone no formato correto
 - [ ] Data de nascimento válida (maior de 16 anos)
 - [ ] Senha forte (min 8 chars, maiúscula, minúscula, número)
@@ -558,24 +554,12 @@ Tabela: interviews
 
 ### 15.2 Código
 - [ ] README.md com instruções de setup
-- [ ] Comentários em código complexo
 - [ ] Documentação de arquitetura
-- [ ] Diagramas de banco de dados (ERD)
 - [ ] Fluxos de autenticação/autorização
 
 ## 16. Funcionalidades Futuras (Opcionais)
 
-- [ ] GraphQL API (alternativa ao REST)
 - [ ] WebSockets para real-time updates
 - [ ] Integração com Google Calendar API
-- [ ] Integração com Instagram/Facebook APIs
 - [ ] Export de relatórios (PDF, Excel)
-- [ ] Import de dados (CSV, Excel)
 - [ ] Versionamento de API (v1, v2)
-- [ ] Multi-tenancy (múltiplas organizações)
-- [ ] Internacionalização (i18n)
-- [ ] Audit log completo (histórico de alterações)
-- [ ] Two-factor authentication (2FA)
-- [ ] OAuth integration (Google, Facebook login)
-- [ ] Webhooks para integrações externas
-- [ ] Machine Learning para recomendações (opcional)
