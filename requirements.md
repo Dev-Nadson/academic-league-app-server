@@ -67,10 +67,9 @@
 - [ ] Contadores por status (ativos, inativos, diretoria, total)
 
 ### 2.4 Validações
-- [ ] Email válido e único
-- [ ] Telefone no formato correto
+- [ X ] Email válido e único
 - [ ] Data de nascimento válida (maior de 16 anos)
-- [ ] Senha forte (min 8 chars, maiúscula, minúscula, número)
+- [ X ] Senha forte (min 8 chars)
 
 ## 3. Atividades
 
@@ -406,7 +405,6 @@ Tabela: interviews
 
 ### 9.1 Upload Service
 - [ ] POST `/upload` - Upload de arquivo único
-- [ ] POST `/upload/multiple` - Upload de múltiplos arquivos
 - [ ] DELETE `/upload/:filename` - Excluir arquivo
 
 ### 9.2 Configuração
@@ -435,7 +433,6 @@ Tabela: interviews
 
 ### 10.2 Índices de Busca
 - [ ] Criar índices full-text em campos de texto
-- [ ] Configurar pesos por campo (título > descrição)
 - [ ] Suporte a busca fuzzy/aproximada (opcional)
 
 ## 11. Dashboard e Estatísticas
@@ -452,7 +449,6 @@ Tabela: interviews
 - [ ] Taxa de conclusão de atividades
 - [ ] Eventos do mês
 - [ ] Postagens publicadas vs pendentes
-- [ ] Taxa de aprovação do processo seletivo
 
 ## 12. Segurança
 
@@ -468,11 +464,9 @@ Tabela: interviews
 - [ ] HTTPS obrigatório em produção
 
 ### 12.2 Validação e Sanitização
-- [ ] Biblioteca de validação (Joi, Yup, Zod)
-- [ ] Validação de todos os inputs
-- [ ] Sanitização de strings
-- [ ] Validação de tipos de dados
-- [ ] Validação de ranges (datas, números)
+- [ X ] Biblioteca de validação (Joi, Yup, Zod)
+- [ X ] Validação de todos os inputs
+- [ X ] Validação de tipos de dados
 
 ### 12.3 Logs e Auditoria
 - [ ] Logging de todas as requisições
@@ -484,12 +478,9 @@ Tabela: interviews
 ## 13. Infraestrutura e DevOps
 
 ### 13.1 Banco de Dados
-- [ ] PostgreSQL ou MySQL (relacional)
-- [ ] Migrations de schema
+- [ X ] PostgreSQL ou MySQL (relacional)
+- [ X ] Migrations de schema
 - [ ] Seeds para dados iniciais
-- [ ] Backup automático diário
-- [ ] Índices em foreign keys
-- [ ] Índices em campos frequentemente buscados
 
 ### 13.2 Cache (Opcional)
 - [ ] Redis para cache de sessões
@@ -504,21 +495,14 @@ Tabela: interviews
 - [ ] Job para limpar sessões expiradas
 - [ ] Job para gerar relatórios
 
-### 13.4 Monitoramento
-- [ ] Health check endpoint `/health`
-- [ ] Metrics endpoint `/metrics` (Prometheus format)
-- [ ] Error tracking (Sentry, Rollbar)
-- [ ] Performance monitoring (APM)
-- [ ] Uptime monitoring
-
 ### 13.5 Deploy
 - [ ] Docker containerization
-- [ ] Docker Compose para desenvolvimento
-- [ ] CI/CD pipeline (GitHub Actions, GitLab CI)
+- [ X ] Docker Compose para desenvolvimento
+- [ X ] CI/CD pipeline (GitHub Actions, GitLab CI)
 - [ ] Testes automatizados
 - [ ] Staging environment
 - [ ] Production environment
-- [ ] Environment variables configuration
+- [ X ] Environment variables configuration
 
 ## 14. Testes
 
