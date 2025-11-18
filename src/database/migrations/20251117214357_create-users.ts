@@ -16,8 +16,6 @@ export async function up(knex: Knex): Promise<void> {
         table.boolean("is_active").defaultTo(true).notNullable()
         table.timestamp("updated_at").defaultTo(knex.fn.now()).notNullable()
         table.timestamp("created_at").defaultTo(knex.fn.now()).notNullable()
-        table.timestamp("last_login").notNullable()
-        table.increments("login_count").defaultTo(0)
     })
 }
 
