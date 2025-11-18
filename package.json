@@ -18,12 +18,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cors": "^11.1.0",
     "@paralleldrive/cuid2": "github:paralleldrive/cuid2",
-    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
     "dotenv": "^17.2.3",
     "fastify": "^5.6.2",
     "knex": "^3.1.0",
     "pg": "^8.16.3",
+    "sqlite3": "^5.1.7",
     "zod": "^4.1.12"
   },
   "devDependencies": {

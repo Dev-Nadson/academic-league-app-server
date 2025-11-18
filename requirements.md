@@ -43,7 +43,7 @@
 
 ### 2.2 Modelo de Dados - User
 ```
-- id (CUID)
+- id (CUID) 
 - name (string, required)
 - email (string, unique, required)
 - password (string, hashed, required)

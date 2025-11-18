@@ -1,9 +1,10 @@
 import type { FastifyInstance } from "fastify";
+import { create_user_controller } from "../controllers/users/create-user-controller.js";
 
 async function users_routes(app: FastifyInstance) {
-    app.get("/", () => { })
+    app.get("/", () => { console.log("oi") })
     app.get("/:id", () => { })
-    app.post("/", () => { })
+    app.post("/", create_user_controller)
     app.put("/:id", () => { })
     app.patch("/:id/status", () => { })
     app.delete("/:id", () => { })
