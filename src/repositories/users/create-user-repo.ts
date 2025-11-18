@@ -1,4 +1,4 @@
-import knex from "knex";
+import { Knex } from "../../database/config.js";
 import type z from "zod";
 import { user_schema } from "../../utils/schemas/user-schema.js";
 import { create_id } from "../../utils/utils.js";
@@ -31,8 +31,8 @@ async function create_user_repo(user: UserInput) {
         is_active
     }
 
-    await knex("user").insert(data)
-    const created_user = await knex("user").select()
+    await Knex("users").insert(data)
+    const created_user = await Knex("users").select().where({ "id": data.id }).first()
 
     return created_user
 }
