@@ -28,15 +28,13 @@
 - [ ] Gerenciamento de sessões ativas
 - [ ] Expiração de tokens (15min access, 7d refresh)
 - [ ] Revogação de tokens
-- [ ] Registro de último login
-- [ ] Contador de logins
 
 ## 2. Usuários/Membros
 
 ### 2.1 CRUD de Usuários
 - [ ] GET `/users` - Listar usuários (paginado, filtros)
 - [ ] GET `/users/:id` - Buscar usuário por ID
-- [ ] POST `/users` - Criar novo usuário
+- [ X ] POST `/users` - Criar novo usuário
 - [ ] PUT `/users/:id` - Atualizar usuário
 - [ ] PATCH `/users/:id/status` - Ativar/desativar usuário
 - [ ] DELETE `/users/:id` - Excluir usuário (soft delete)
