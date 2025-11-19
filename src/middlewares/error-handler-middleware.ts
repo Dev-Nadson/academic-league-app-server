@@ -13,7 +13,7 @@ async function error_handler_middleware(error: unknown, request: FastifyRequest,
     }
 
     if (error instanceof AppError) {
-        return reply.status(400).send({
+        return reply.status(error.status_code).send({
             error: error.name,
             issues: error.message
         })
