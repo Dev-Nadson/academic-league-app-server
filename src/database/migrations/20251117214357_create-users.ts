@@ -11,7 +11,7 @@ export async function up(knex: Knex): Promise<void> {
         table.string("enrollment_number").notNullable()
         table.string("institution").notNullable()
         table.string("period").notNullable()
-        table.enum("role", ["superadmin", "president", "vice-president", "member"]).defaultTo("member").notNullable()
+        table.enum("role", ["superadmin", "president", "vice-president", "director", "member"]).defaultTo("member").notNullable()
         table.string("avatar_url").notNullable()
         table.boolean("is_active").defaultTo(true).notNullable()
         table.timestamp("updated_at").defaultTo(knex.fn.now()).notNullable()
