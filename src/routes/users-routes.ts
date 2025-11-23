@@ -1,11 +1,11 @@
 import type { FastifyInstance } from "fastify";
+import { list_users_controller } from "../controllers/users/list-users-controller.js";
 import { create_user_controller } from "../controllers/users/create-user-controller.js";
-import { user_schema } from "../utils/schemas/user-schema.js";
 
 async function users_routes(app: FastifyInstance) {
-    app.get("/", () => { console.log("oi") })
+    app.get("/", list_users_controller)
     app.get("/:id", () => { })
-    app.post("/", { schema: user_schema }, create_user_controller)
+    app.post("/", create_user_controller)
     app.put("/:id", () => { })
     app.patch("/:id/status", () => { })
     app.delete("/:id", () => { })
