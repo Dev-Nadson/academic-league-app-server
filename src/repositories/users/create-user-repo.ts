@@ -1,5 +1,5 @@
-import { Knex } from "../../database/config.js";
 import type z from "zod";
+import { Knex } from "../../database/config.js";
 import { user_schema } from "../../utils/schemas/user-schema.js";
 import { create_id } from "../../utils/utils.js";
 import { hash_text } from "../../utils/encryption.js";
