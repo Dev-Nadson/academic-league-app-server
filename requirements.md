@@ -32,7 +32,7 @@
 ## 2. Usuários/Membros
 
 ### 2.1 CRUD de Usuários
-- [ ] GET `/users` - Listar usuários (paginado, filtros)
+- [ X ] GET `/users` - Listar usuários (paginado, filtros)
 - [ ] GET `/users/:id` - Buscar usuário por ID
 - [ X ] POST `/users` - Criar novo usuário
 - [ ] PUT `/users/:id` - Atualizar usuário
