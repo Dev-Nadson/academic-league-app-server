@@ -1,4 +1,4 @@
-import { Knex } from "knex";
+import type { Knex } from "knex";
 import { create_id } from "../../utils/utils.js";
 import { hash_text } from "../../utils/encryption.js";
 
