@@ -1,6 +1,6 @@
 import z from "zod"
 
-const user_schema = z.object({
+const user_body_schema = z.object({
     name: z.string(),
     email: z.email(),
     password: z.string().min(8).max(64).trim(),
@@ -13,4 +13,8 @@ const user_schema = z.object({
     is_active: z.boolean(),
 })
 
-export { user_schema } 
+const user_params_schema = z.object({
+    id: z.string()
+})
+
+export { user_body_schema, user_params_schema } 
