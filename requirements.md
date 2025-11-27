@@ -10,7 +10,7 @@
 - [ ] Endpoint POST `/auth/refresh-token`
 - [ ] Endpoint POST `/auth/forgot-password`
 - [ ] Endpoint POST `/auth/reset-password`
-- [ ] Hash de senhas com bcrypt/argon2
+- [ X ] Hash de senhas com bcrypt/argon2
 
 ### 1.2 Autorização e Permissões
 - [ ] Middleware de autenticação (verificar JWT)
@@ -33,11 +33,10 @@
 
 ### 2.1 CRUD de Usuários
 - [ X ] GET `/users` - Listar usuários (paginado, filtros)
-- [ ] GET `/users/:id` - Buscar usuário por ID
+- [ X ] GET `/users/:id` - Buscar usuário por ID
 - [ X ] POST `/users` - Criar novo usuário
 - [ ] PUT `/users/:id` - Atualizar usuário
 - [ ] PATCH `/users/:id/status` - Ativar/desativar usuário
-- [ ] DELETE `/users/:id` - Excluir usuário (soft delete)
 
 ### 2.2 Modelo de Dados - User
 ```
@@ -68,7 +67,6 @@
 
 ### 2.4 Validações
 - [ X ] Email válido e único
-- [ ] Data de nascimento válida (maior de 16 anos)
 - [ X ] Senha forte (min 8 chars)
 
 ## 3. Atividades
