@@ -1,10 +1,11 @@
 import type { FastifyInstance } from "fastify";
 import { list_users_controller } from "../controllers/users/list-users-controller.js";
+import { get_user_controller } from "../controllers/users/get-user-controller.js";
 import { create_user_controller } from "../controllers/users/create-user-controller.js";
 
 async function users_routes(app: FastifyInstance) {
     app.get("/", list_users_controller)
-    app.get("/:id", () => { })
+    app.get("/:id", get_user_controller)
     app.post("/", create_user_controller)
     app.put("/:id", () => { })
     app.patch("/:id/status", () => { })
