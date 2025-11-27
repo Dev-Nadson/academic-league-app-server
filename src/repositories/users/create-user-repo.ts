@@ -1,11 +1,11 @@
 import type z from "zod";
 import { Knex } from "../../database/config.js";
-import { user_schema } from "../../utils/schemas/user-schema.js";
+import { user_body_schema } from "../../utils/schemas/user-schema.js";
 import { create_id } from "../../utils/utils.js";
 import { hash_text } from "../../utils/encryption.js";
 import { ConflictError, InternalServerError } from "../../utils/errors/app-errors.js";
 
-type UserInput = z.infer<typeof user_schema>
+type UserInput = z.infer<typeof user_body_schema>
 
 async function create_user_repo({ name, email, password, birthdate, enrollment_number, institution, period, role, avatar_url, is_active }: UserInput) {
 
